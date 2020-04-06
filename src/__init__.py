@@ -13,6 +13,7 @@ def index():
 
 @app.route("/predict", methods=["POST"])
 def query_predict():
-    file = request.files.get("file")
+    file = request.files.get("image")
+    print(request.files.__dict__)
     result = predict(pretrained_model, file.read())
     return jsonify({"result": result})

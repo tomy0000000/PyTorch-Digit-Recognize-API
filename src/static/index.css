@@ -4,28 +4,30 @@ body {
 }
 
 body {
-  display: -ms-flexbox;
-  display: flex;
   -ms-flex-align: center;
   align-items: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
   background-color: #f5f5f5;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
 }
 
-.form-signin {
-  width: 100%;
-  max-width: 330px;
-  padding: 15px;
+main {
   margin: auto;
 }
 
-.form-signin .form-control {
+form {
+  max-width: 330px;
+  padding: 15px;
   position: relative;
   box-sizing: border-box;
   height: auto;
-  padding: 10px;
   font-size: 16px;
+}
+
+ul {
+  min-width: 20rem;
+  max-height: 14rem;
 }
 
 .custom-file-label {

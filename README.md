@@ -9,7 +9,7 @@ Built with Flask and PyTorch.
 * Clone Repo
 
 ```bash
-git clone
+git clone https://github.com/tomy0000000/PyTorch-Digit-Recognizer-API.git
 ```
 
 * Install Environment
@@ -19,6 +19,8 @@ git clone
 pipenv install
 
 # Standard Install
+python3 -m venv venv
+source ./venv/bin/activate
 pip install -r requirements.txt
 ```
 
@@ -26,6 +28,7 @@ pip install -r requirements.txt
 
 ```bash
 export FLASK_APP="src"
+export FLASK_ENV=development
 ```
 
 * Run Server
@@ -45,8 +48,6 @@ flask run
 ## References & Credits
 
 * [aaron-xichen/pytorch-playground](https://github.com/aaron-xichen/pytorch-playground) (Pre-trained Model)
-
 * [avinassh/pytorch-flask-api-heroku](https://github.com/avinassh/pytorch-flask-api-heroku) (HTML Interface)
-
 * [Deploying PyTorch in Python via a REST API with Flask](https://pytorch.org/tutorials/intermediate/flask_rest_api_tutorial.html)
 
