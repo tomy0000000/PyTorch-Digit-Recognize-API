@@ -1,4 +1,4 @@
-# PyTorch Digit Recogize API
+# PyTorch Digit Recognize API
 
 A simple web server which accept single-digit image and output recognized result.
 
