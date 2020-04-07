@@ -15,13 +15,15 @@ git clone https://github.com/tomy0000000/PyTorch-Digit-Recognizer-API.git
 * Install Environment
 
 ```bash
-# Using Pipenv
-pipenv install
-
 # Standard Install
 python3 -m venv venv
 source ./venv/bin/activate
 pip install -r requirements.txt
+
+# Using Pipenv (with requirements.txt)
+# Since urlencoded-wheel-dependencies is malfunctioning (pipenv #4089)
+# Pipfile will be back after patch is released 
+pipenv install
 ```
 
 * Configure Flask
